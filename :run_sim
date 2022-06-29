@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# Run iverilog
+
+# Enter executable file name
+out=and.out
+# Enter source files name
+files="and_gate.v tb_and.v"
+
+iverilog -o $out $files
+
+./$out
